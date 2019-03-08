@@ -9,6 +9,11 @@ verify_ssl = true
 django = "*"
 djangorestframework = "*"
 coreapi = "*"
+celery = "*"
+eventlet = "*"
+django-celery-beat = "*"
+djangorestframework-stubs = "*"
+django-filter = "*"
 
 [requires]
 python_version = "3.7"
