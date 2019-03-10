@@ -24,5 +24,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('docs/', include_docs_urls(title="VJService API docs")),
     path('api/', include(router.urls)),
-    path('api/problem/<str:soj>/<int:sid>', ProblemAPIView.as_view())
+    path('api/oj/', include('oj.urls')),
+    path('api/problem/<str:soj>/<int:sid>', ProblemAPIView.as_view()),
+    path('api/submission/', include('submission.urls'))
 ]

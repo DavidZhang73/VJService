@@ -132,4 +132,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 # Celery
 CELERY_BROKER_URL = 'amqp://guest@davidz.cn//'
-# CELERY_RESULT_BACKEND = 'amqp://guest@davidz.cn//'

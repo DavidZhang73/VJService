@@ -10,9 +10,39 @@ class OJAdmin(admin.ModelAdmin):
         'id',
         'name',
         'start_sid',
-        'end_sid'
+        'end_sid',
     ]
     list_display_links = [
         'id',
-        'name'
+        'name',
+    ]
+
+
+@admin.register(models.Language)
+class OJLanguageAdmin(admin.ModelAdmin):
+    list_display = [
+        'id',
+        'name',
+        'code',
+        'oj',
+    ]
+    list_display_links = [
+        'id',
+        'name',
+    ]
+
+
+@admin.register(models.Account)
+class OJLanguageAdmin(admin.ModelAdmin):
+    list_display = [
+        'id',
+        'username',
+        'nickname',
+        'password',
+        'oj',
+    ]
+    list_display_links = [
+        'id',
+        'username',
+        'nickname',
     ]
