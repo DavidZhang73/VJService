@@ -6,7 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-django = "*"
+django = "==2.2.6"
 djangorestframework = "*"
 coreapi = "*"
 celery = "*"
@@ -14,6 +14,9 @@ eventlet = "*"
 django-celery-beat = "*"
 djangorestframework-stubs = "*"
 django-filter = "*"
+jinja2 = "==2.10.3"
+mypy = "==0.740"
+urllib3 = "==1.25.6"
 
 [requires]
 python_version = "3.7"
